@@ -61,13 +61,15 @@
 
 .nav__ul li:hover{
     background:rgba(17, 29, 64, 0.4);
-   /* background: rgba(0, 0, 0, .2); */
-
 }
 
 .anchor {
     text-decoration: none;
     color: #f3f0e9;
+}
+
+.anchor:hover{
+    color: aquamarine;
 }
 
 .footer {
@@ -247,13 +249,35 @@
     padding: 3rem;
     align-self: center;
     justify-self: flex-start;       
-    background-color: rgba(1, 7, 28, 0.5);
+    background-color: rgba(1, 7, 28, .5);
     margin-bottom: 1.5rem;
 }
 
 .section__div--link {
     display: flex;
     justify-content: flex-end;
+}
+
+.galeria{
+    width:80%;
+    height: 180px;
+    border: solid 5px darkgray;
+    border-radius: 10px;
+    background-image: url(./imagenes/clientes.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin: auto;  
+    animation: slider 10s ease-in-out infinite;  
+}
+
+@keyframes slider {
+    from{       
+        background-position:left center;   
+    }
+    to{
+        background-position:right center;      
+    }
 }
 
 .link {
