@@ -59,6 +59,12 @@
     margin-top: 5px;
 }
 
+.nav__ul li:hover{
+    background:rgba(17, 29, 64, 0.4);
+   /* background: rgba(0, 0, 0, .2); */
+
+}
+
 .anchor {
     text-decoration: none;
     color: #f3f0e9;
