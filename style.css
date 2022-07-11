@@ -38,8 +38,15 @@ body {
 .footer {
     display: flex;
     justify-content: center;
-    align-items: flex-end;      
-} 
+    align-items: flex-end;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2em;
+}
 
 .footer img {
     height: 2.2rem;
@@ -58,23 +65,19 @@ body {
     color: #001149;
 }
 
-.secondaryTitle {    
-    font-size: 2.3em;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    font-family: 'DM Sans';
-    text-align: start;
-    color: aqua;
-    text-shadow: 2px 2px 2px #000;    
-}
-
-.secondaryTitle-dos{
+.secondaryTitle {
     color: #001149;
-    font-size: 1.8em;
-    font-weight: 400;
+    font-size: 2em;
+    font-weight: 700;
     margin-bottom: 1rem;
-    font-family: 'Raleway';
     text-align: start;
+}
+.contacText{
+color: #001149;
+font-size: 1.5em;
+font-weight: 500;
+margin-bottom: 1rem;
+text-align: start;
 }
 
 .mainTitle {
@@ -91,19 +94,19 @@ body {
     font-size: 1.3rem;
     line-height: 1em;
     text-align: left;
-    color: #001149;  
+    color: #001149;
 }
 
 /* fin etiquetas comunes */
 .bgHome {
-    background: url(./imagenes/bgHome.jpg) no-repeat fixed;
+    background: url(./imagenes/bgHomea.jpg) no-repeat fixed;
     background-size: 100% 100%;
     height: 100vh;
     color: #f3f0e9;
 }
 
 .mainHome {
-  display: flex; 
+    display: flex;
     font-size: 4rem;
     font-weight: 300;
     align-items: center;
@@ -111,6 +114,7 @@ body {
     margin-left: 45%;
     margin-right: 13%;
     margin-top: 14%;
+    line-height: 70px;
     text-shadow: 1px 1px 3px #000;
 }
 
@@ -127,16 +131,13 @@ body {
     cursor: pointer;
     transition: all .5s ease;
 }
+
 .bgQuery {
     color: #001149;
     background: url(./imagenes/bgdos-a.jpg) no-repeat fixed;
     background-color: beige;
     background-size: 100% 100%;
     height: 100vh;
-}
-
-.container {
-    margin-top: 50px;
 }
 
 #accordionFlushExample {
@@ -259,6 +260,7 @@ ul li {
 .form__textarea,
 .submit {
     align-self: flex-end;
+    
 }
 
 .form__textarea {
@@ -289,24 +291,17 @@ ul li {
 }
 
 .mainText {
-    text-align: center;
-    align-self: center;
-    font-size: 3.5rem;
-    font-weight: 400;
-    line-height: 1.1em;
+    
+   /*  align-self: center; */
+   
+   
+  
     color: #001149;
-    font-family: 'Raleway';
     text-shadow: 1px 1px 3px #fff;
 }
 
-span {
-    font-style: italic;
-    color:aqua;
-    text-shadow: 1px 1px 1px black;
-}
 
-.form__label {
-    /* color: rgb(0, 242, 255); */
+.form__label {   
     color: aqua;
     font-size: 20px;
     text-shadow: 2px 2px 2px #000;
@@ -371,15 +366,10 @@ span {
     font-weight: 400;
     line-height: 1.1em;
     color: #001149;
-    font-family: 'Raleway';
+  
     text-shadow: 1px 1px 3px #fff;
 }
 
-span {
-    font-style: italic;
-    color: aquamarine;
-    text-shadow: 1px 1px 1px black;
-}
 
 .bgServices {
     background: url(./imagenes/bgseis.jpg) no-repeat fixed;
@@ -410,11 +400,7 @@ span {
 
 .section__div--p {
     width: 80%;
-    /* background: rgba(97, 105, 134,.5);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 5%;
-    border-radius: 20px; */
+  
 }
 
 .cards {
@@ -429,21 +415,73 @@ span {
     flex-direction: row-reverse;
 }
 
-.link {
-    color:#001149;
-    text-shadow: 2px 2px 2px gray;
-    font-size: 2.2rem;
-    font-weight: 200;
-    margin-top: 1.3rem;
-    font-weight: 500;
-    align-self: center;
-    justify-self: flex-end;
+.contacLink {
+    color: #f3f0e9;
+    text-shadow: 3px 3px 6px #000;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: .5em;
 }
 
-.link:hover {
+.contacLink:hover {
     color: aqua;
-    font-weight: 100;
+    font-weight: 300;
     text-shadow: 1px 1px 1px #000;
     cursor: pointer;
     transition: all .5s ease;
+}
+
+.bgUs {
+  background: url(./imagenes/bgsiete.jpg) no-repeat fixed; 
+ /*  background-color: #f3f0e9; */
+    background-size: 100% 100%;
+    height: 100vh;
+    color: #001149;
+}
+
+.TextUs-principal img{
+    position:absolute;
+    width: 500px;
+    height: 300px;
+    z-index: -1;
+}
+
+.textUs-a{
+    width: 100%;
+    margin-left: 10em;
+    margin-top: 2em;
+    background: rgba(243,240,233,1) ;
+    padding: 20px;
+    font-weight: 500;
+    margin-bottom: 3em;
+
+}
+
+.span-mail {
+    font-style: italic;
+    color: aqua;
+    text-shadow: 1px 1px 1px black;
+}
+
+.span-ar{
+    font-style: italic;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 500px){
+
+    .TextUs-principal img{
+        position:absolute;
+        width: 90%;
+        height: 200px;
+        z-index: -1;
+    }
+
+    .textUs-a{    
+    margin-left: 5em;
+    width: 200px;
+  
+}
+    
 }
