@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css" type="text/css">
     <title>Ar en gestion/Preguntas frecuentes</title>
 </head>
-<body class="bgContact">
+
+<body class="bgContacto">
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -34,73 +36,69 @@
         </nav>
     </header>
     <main>
-        <section class="container">
-            <div class="contac">
-                <div class="col">
-                    <p class="fs-4">Envianos tus datos o escribinos a <span class="span-mail">info@arengestion </span> para que podamos responder a
+        </div>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="conText fs-5">Envianos tus datos o escribinos a <span class="span-mail">info@arengestion </span>
+                        para
+                        que podamos responder a
                         todas tus inquietudes.
                     <p>
                 </div>
-            </div>
-            <div class=" row">
-                <div class="form col 12 col-lg-3 ">
-                    <div class="row gx-1">
-                        <label for="empresa" class="lempresa form__label">Empresa</label>
-                        <input type="text" id="empresa" class="form__input" placeholder="empresa">
-                    </div>
-                    <div class="row gx-1">
-                        <label for="nombre" class="lnombre form__label">Nombre</label>
-                        <input type="text" id="nombre" class="form__input" placeholder="nombre">
-                    </div>
-                    <div class="row gx-1">
-                        <label for="telefono" class="ltelefono form__label">Teléfono</label>
-                        <input type="text" id="telefono" class="form__input" placeholder="teléfono">
-                    </div>
-                    <div class="row gx-1">
-                        <label for="correo" class="lcorreo form__label">e-mail</label>
-                        <input type="text" id="mail" class="form__input" placeholder="arg@correo.com">
-                    </div>
-                </div>
-                <div class="form col 12 col-lg-4">
-                    <div class="row gx-1">
-                        <label for="mensaje" class="lmensaje form__label">Mensaje</label>
-                        <textarea id="mensaje" class="form__textarea" placeholder="Escriba su mensaje"></textarea>
-                    </div>
-                    <div class="row ">
-                        <div class="col 12 col-lg-6">
-                            <input type="submit" class="submit" value="Enviar comentario">
+                <div class="row">
+                    <div class="form col-lg-3 ">
+                        <div class="row gx-1">
+                            <label for="empresa" class="lempresa form__label">Empresa</label>
+                            <input type="text" id="empresa" class="form__input" placeholder="empresa">
+                        </div>
+                        <div class="row gx-1">
+                            <label for="nombre" class="lnombre form__label">Nombre</label>
+                            <input type="text" id="nombre" class="form__input" placeholder="nombre">
+                        </div>
+                        <div class="row gx-1">
+                            <label for="telefono" class="ltelefono form__label">Teléfono</label>
+                            <input type="text" id="telefono" class="form__input" placeholder="teléfono">
+                        </div>
+                        <div class="row gx-1">
+                            <label for="correo" class="lcorreo form__label">e-mail</label>
+                            <input type="text" id="mail" class="form__input" placeholder="arg@correo.com">
                         </div>
                     </div>
+                    <div class="form col-lg-4">
+                        <div class="row">
+                            <label for="mensaje" class="lmensaje form__label">Mensaje</label>
+                            <textarea id="mensaje" class="form__textarea" placeholder="Escriba su mensaje"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 ">
+                                <input type="submit" class="submit" value="Enviar comentario">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 align-self-center ">
+                        <p class="conText-b text-start">&#10077;La mejor gestión para el mejor resultado&#10078;</p>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-lg-5 align-self-center ">
-                    <p class="fs-1 text-start" >&#10077;La mejor gestión para el mejor resultado &#10078;</p>
-                </div>
-            
         </section>
     </main>
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="footer container-fluid">
             <div class="row">
-                <div class="col-9 text-end">
-                    <h5 class="text-end">Seguinos en nuestras redes</h5>
-                </div>
-                <div class="col-1">
-                    <a href="https://www.linkedin.com/home" target="_blank"><img src="../imagenes/linkblue.png"
-                            alt="linkedin"></a>
-                </div>
-                <div class="col-1">
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><img
-                            src="../imagenes/instblue.png" alt="instagram"></a>
-                </div>
-                <div class="col-1">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/fbookblue.png"
-                            alt="facebook"></a></li>
-                </div>
+                <p class="col-8 text-start footer__text">Seguinos en nuestras redes</p>
+                <a class="col-1" href="https: //www.linkedin.com/home" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a class="col-1" href="https://www.instagram.com/accounts/login/" target="_blank"><i
+                        class="bi bi-instagram"></i></a>
+                <a class="col-1" href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <i class="col-1 bi bi-check2-circle"></i>
             </div>
         </div>
+    </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
