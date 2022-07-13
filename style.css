@@ -400,3 +400,11 @@ height: 250px;
     color: aqua;
     text-shadow: 1px 1px 1px black;
 }
+
+@media screen and (max-width: 800px){
+    #accordionFlushExample {
+        width: 80%;
+        margin: 0;
+        margin: auto;
+    }       
+}
