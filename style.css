@@ -63,8 +63,6 @@ body {
     font-size: 1em;
 }
 
-
-
 /* fin etiquetas comunes */
 
 .bgHome {
@@ -236,7 +234,6 @@ ul li {
     }
 }
 
-
 .bgServicios {
     background: url(./imagenes/bgseis.jpg) no-repeat fixed;
     background-size: 100% 100%;
@@ -311,7 +308,6 @@ ul li {
     margin-bottom: 0;
 }
 
-
 .bgContacto {
     color: #001149;
     background: url(./imagenes/bgtres-a.jpg) no-repeat fixed;
@@ -362,6 +358,7 @@ ul li {
     border-radius: 8px;
     border-right: 5px outset #3fe2c4;
     border-bottom: 5px outset #001149;
+    margin-bottom: 1em;
     color: #001149;
     text-shadow: 1px 1px 1px white;
     font-weight: 600;
