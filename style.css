@@ -88,75 +88,69 @@ body {
     height: 100vh;
 }
 
-.section__div--nos {
-    width: 85vw;
-    height: 400px;
+.nos {
+    height: 300px;
     background: url(./imagenes/us-uno.jpg) no-repeat;
-    background-size: contain;
+    background-size: 75% 100%;
     display: flex;
-    flex-grow: 1fr;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    margin: auto;
-    margin-bottom: 50px;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.section__div--nos--text {
-    width: 700px;
-    background-color: #f3f0e9;
-    margin-top: 25px;
-    padding-top:10px;
-   padding-left: 20px;
+.contenedorText {
+    width: 75%;
+    height: auto;
+    background: #f3f0e9;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 
 }
 
 .textUno {
+    padding-top: .5em;
+    line-height: 1.3em;
+    text-align: center;
     font-weight: 500;
-    font-size: 1.9em;
-    line-height: 1.2em;
-    margin-bottom: 1em;
-    text-align: left;
-   
+    margin-bottom: .5em;
 }
 
 .textDos {
-    font-weight: 500;
-    font-size: 1.2em;
-    line-height: 1.2em;
+    line-height: 1.3em;
+    text-align: center;
+
 }
+
 
 .nosotros .container {
-    margin: 0;
-    margin: auto;
-}
-
-.visionx {
-    background-color: #f3f0e9;
-    border-radius: 10px;
-    text-align: center;
-}
-
-
-.vision{
-    width: 100%;
-    height: 500px;
-    background: url(./imagenes/us-tres.jpg) no-repeat;
-    background-size: 100% 100%;   
-    align-self: flex-end;
+    margin-top: 30%;
     display: flex;
-    flex-grow: 1fr;
     align-items: center;
     justify-content: flex-end;
+}
+
+
+.vision {
+    width: 90%;
+    height: 350px;
+    background: url(./imagenes/us-tres.jpg) no-repeat;
+    background-size: 100% 100%;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     margin: auto;
 }
 
-.visionText{
-    background-color: rgba(243, 240, 233,.7);
-    text-align: center;        
+.visionText {
+    background-color: rgba(243, 240, 233, .7);
+    text-align: left;
+    line-height: 2em;
+    font-weight: 500;
 }
-
 
 .bgQuery {
     color: #001149;
@@ -250,34 +244,29 @@ ul li {
 }
 
 .sectionPlanes {
-    width:100%;
- 
-   display: flex;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
     margin: auto;
 }
 
-.cards {    
-   display: flex;
-   flex-direction: column;
-      
+.cards {
+    display: flex;
+    flex-direction: column;
 }
 
-.cards:nth-child(2){
-    margin-left:1em;
+.cards:nth-child(2) {
+    margin-left: 1em;
     margin-right: 1em;
 }
-
 
 #imgOut,
 #imgSos,
 #imgTu {
-
-width: 400px;
-height: 250px;
-
+    width: 400px;
+    height: 250px;
     border-right: outset 5px aqua;
     border-bottom: outset 5px aqua;
     border-radius: 5%;
@@ -285,11 +274,11 @@ height: 250px;
 
 .section__div--text {
     width: 400px;
-    text-align:flex-start;
+    text-align: flex-start;
     margin-top: 1em;
     margin-bottom: 1.5em;
     align-self: center;
-    background: rgba(243, 240, 233, .5);    
+    background: rgba(243, 240, 233, .5);
     border-radius: 10px;
 }
 
@@ -297,8 +286,8 @@ height: 250px;
     color: #001149;
     font-size: 2em;
     text-shadow: 2px 2px 3px #fff;
-    font-weight: 600;    
-    text-align: start;
+    font-weight: 600;
+    text-align: center;
 }
 
 .span-ar {
@@ -331,7 +320,7 @@ height: 250px;
 }
 
 .conText-b {
-    color:#001149;
+    color: #001149;
     text-shadow: 3px 3px 3px white;
     text-align: center;
     font-size: 3.5em;
@@ -364,7 +353,7 @@ height: 250px;
     font-size: 16px;
     border-radius: 8px;
     border-right: 5px outset #3fe2c4;
-    border-bottom: 5px outset #001149;    
+    border-bottom: 5px outset #001149;
     color: #001149;
     text-shadow: 1px 1px 1px white;
     font-weight: 600;
@@ -401,10 +390,20 @@ height: 250px;
     text-shadow: 1px 1px 1px black;
 }
 
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 400px) {
+.contenedorText {
+    width: 100%;
+    padding: 3px;
+}
+}
+
+@media screen and (max-width: 768px) {
     #accordionFlushExample {
         width: 80%;
         margin: 0;
         margin: auto;
-    }       
+    }
+
 }
+    
