@@ -98,14 +98,14 @@ body {
 }
 
 .contenedorText {
-    width: 75%;
+    width: 65%;
     height: auto;
     background: #f3f0e9;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 2px;
    
 }
 
@@ -127,17 +127,23 @@ body {
     position: absolute;
     z-index: 11;
     color: #001149;
-    text-shadow: 3px 3px 3px gray;
+    text-shadow: 3px 3px 3px white;
 }
 
 .open{
     top: 42%;
-    left: 28%;
+    left: 33%;
+    color:#f3f0e9;
+    text-shadow: 3px 3px 3px #001149;
+   
 }
 
 .close{
     top: 60%;
-    right: 9%;
+    right: 5%;
+   
+   
+
 }
 
 .nosotros .container {
