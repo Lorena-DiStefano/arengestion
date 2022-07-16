@@ -101,12 +101,12 @@ body {
     width: 65%;
     height: auto;
     background: #f3f0e9;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2px;
-   
+
 }
 
 .textUno {
@@ -122,37 +122,12 @@ body {
     text-align: center;
 }
 
-.com {
-    font-size: 8em;
-    position: absolute;
-    z-index: 11;
-    color: #001149;
-    text-shadow: 3px 3px 3px white;
-}
-
-.open{
-    top: 42%;
-    left: 33%;
-    color:#f3f0e9;
-    text-shadow: 3px 3px 3px #001149;
-   
-}
-
-.close{
-    top: 60%;
-    right: 5%;
-   
-   
-
-}
-
 .nosotros .container {
     margin-top: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-
 
 .vision {
     width: 90%;
@@ -270,19 +245,7 @@ ul li {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    margin: auto;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-}
-
-.cards:nth-child(2) {
-    margin-left: 1em;
-    margin-right: 1em;
+    justify-content: space-evenly;
 }
 
 #imgOut,
@@ -349,7 +312,7 @@ ul li {
     font-size: 3.5em;
     line-height: 1em;
     font-weight: 400;
-    margin-bottom: .5em;
+    margin-top: .5em;
 }
 
 .form__input,
@@ -418,6 +381,23 @@ ul li {
     .contenedorText {
         width: 100%;
         padding: 3px;
+        align-self: center;
+        margin: 0;
+    }
+
+    .nos {
+        background-size: 100% 100%;
+    }
+
+    #imgOut,
+    #imgSos,
+    #imgTu {
+        width: 320px;
+    }
+
+
+    .section__div--text {
+        width: 320px;
     }
 }
 
@@ -428,4 +408,7 @@ ul li {
         margin: auto;
     }
 
+    .contenedorText {
+        margin-bottom: 15px;
+    }
 }
