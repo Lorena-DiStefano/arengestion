@@ -1,0 +1,57 @@
+* {
+    Margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', 'DM Sans', sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 9em 1fr 5em;
+}
+
+.navbar {
+    margin-top: .5em;
+
+    &-brand img {
+        width: 8.5rem;
+        height: 9rem;
+        justify-self: center;
+        align-self: center;
+    }
+
+    &-collapse {
+        flex-grow: initial;
+    }
+
+    &-nav {
+        font-size: 18px;
+        font-weight: 600;
+        background: rgba(243, 240, 233, .6);
+        border-radius: 10px;
+    }
+
+}
+
+.nav-link:hover {
+    background: rgba(0, 17, 73, .3);
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+&.container-fluid {
+    align-self: flex-end;
+    font-size: 1.3em;
+    font-weight: 600;  
+}
+
+& i {
+    color: $color2;
+    font-size: 1em;
+}
+}
