@@ -1,0 +1,80 @@
+.query {
+    color: #001149;
+    background: url(../imagenes/bgdos-a.jpg) no-repeat fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+#accordionFlushExample {
+width: 80%;
+margin: 0;
+margin: auto;
+}
+
+.accordion {
+    &-button {
+        background: linear-gradient(-30deg, lightblue, #222a44);
+        color: $color1;
+        text-shadow: 1px 1px 3px #000;
+        font-size: .7em;
+        font-weight: 500;
+        font-family: 'Raleway', 'xDM Sans', xsans-serif;
+    }
+
+    &-body {
+        background: #f5efe9;    
+        font-size: 1em;
+
+        .text{
+            text-align: right;
+        }
+
+        .div--galeria {
+            display: flex;
+            align-items: center;
+            justify-items: space-between;
+        }
+        
+        .galeria {
+            width: 100%;
+            height: 180px;
+            border: solid 5px  #f5efe9;
+            border-radius: 10px;
+            background-image: url(../imagenes/clientes.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            margin: auto;
+            animation: slider 15s ease-in-out infinite;            
+        }
+
+        
+        @keyframes slider {
+            from {
+                background-position: left center;
+            }
+        
+            to {
+                background-position: right center;
+            }
+        }
+    }
+
+    ul li {
+        list-style: circle;
+    }
+
+    &-flush {
+        color: $color2;
+        font-size: 1.2em;
+        font-weight: 500;
+        font-family: 'Raleway', 'DM Sans', sans-serif;
+    }
+
+    &-flush p {
+        margin: 0;
+    }
+
+}
+
+

@@ -6,7 +6,7 @@ body {
   font-family: 'Raleway', 'DM Sans', sans-serif;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 1fr 0.6fr;
+  grid-template-rows: 1fr 1fr .6fr;
   color: #001149; }
 
 .navbar {
@@ -135,3 +135,61 @@ body {
     text-align: center;
     line-height: 2em;
     font-weight: 600; }
+
+.query {
+  color: #001149;
+  background: url(../imagenes/bgdos-a.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100vh; }
+
+#accordionFlushExample {
+  width: 80%;
+  margin: 0;
+  margin: auto; }
+
+.accordion-button {
+  background: linear-gradient(-30deg, lightblue, #222a44);
+  color: #f3f0e9;
+  text-shadow: 1px 1px 3px #000;
+  font-size: .7em;
+  font-weight: 500;
+  font-family: 'Raleway', 'xDM Sans', xsans-serif; }
+
+.accordion-body {
+  background: #f5efe9;
+  font-size: 1em; }
+  .accordion-body .text {
+    text-align: right; }
+  .accordion-body .div--galeria {
+    display: flex;
+    align-items: center;
+    justify-items: space-between; }
+  .accordion-body .galeria {
+    width: 100%;
+    height: 180px;
+    border: solid 5px  #f5efe9;
+    border-radius: 10px;
+    background-image: url(../imagenes/clientes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin: auto;
+    animation: slider 15s ease-in-out infinite; }
+
+@keyframes slider {
+  from {
+    background-position: left center; }
+  to {
+    background-position: right center; } }
+
+.accordion ul li {
+  list-style: circle; }
+
+.accordion-flush {
+  color: #001149;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: 'Raleway', 'DM Sans', sans-serif; }
+
+.accordion-flush p {
+  margin: 0; }
