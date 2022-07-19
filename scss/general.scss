@@ -9,6 +9,7 @@ body {
     grid-template-columns: auto;
     grid-template-rows: 1fr 1fr .6fr;
     color: $color2;
+   
 }
 
 .navbar {
@@ -38,6 +39,8 @@ body {
 }
 
 .footer {
+    width: 100%;
+    margin-bottom: 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -45,18 +48,19 @@ body {
     &.container {
         font-size: .9em;
         font-weight: 600;
-        
-        @media screen and (min-width:400px) {
-           font-size:1.2rem
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        i {
+            color: $color2;
+            font-size: 1em;
         }
     }
 
-    i {
-        color: $color2;
-        font-size: 1em;
+    @media screen and (min-width:400px) {
+        .containter{
+        font-size: 1.2rem
+        }
     }
-
 }
-
-
-

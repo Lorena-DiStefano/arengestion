@@ -29,18 +29,23 @@ body {
   border-radius: 5px; }
 
 .footer {
+  width: 100%;
+  margin-bottom: 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end; }
   .footer.container {
     font-size: .9em;
-    font-weight: 600; }
-    @media screen and (min-width: 400px) {
-      .footer.container {
-        font-size: 1.2rem; } }
-  .footer i {
-    color: #001149;
-    font-size: 1em; }
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end; }
+    .footer.container i {
+      color: #001149;
+      font-size: 1em; }
+  @media screen and (min-width: 400px) {
+    .footer .containter {
+      font-size: 1.2rem; } }
 
 .home {
   background: url(../imagenes/bgHome.jpg) no-repeat fixed;
@@ -143,7 +148,8 @@ body {
 #accordionFlushExample {
   width: 80%;
   margin: 0;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 1em; }
 
 .accordion-button {
   background: linear-gradient(-30deg, lightblue, #222a44);
@@ -202,7 +208,7 @@ body {
   color: #f3f0e9;
   text-shadow: 3px 3px 5px #000;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 400;
   margin-bottom: .5em; }
 
@@ -215,14 +221,14 @@ body {
 #imgOut,
 #imgSos,
 #imgTu {
-  width: 390px;
+  width: 300px;
   height: 250px;
   border-right: outset 5px aqua;
   border-bottom: outset 5px aqua;
   border-radius: 5%; }
 
 .section__div--text {
-  width: 400px;
+  width: 300px;
   text-align: flex-start;
   margin-top: 1em;
   margin-bottom: 1.5em;
@@ -242,6 +248,19 @@ body {
     font-size: 1.3rem;
     line-height: 1.3em;
     text-align: left; }
+
+@media screen and (min-width: 400px) {
+  .tituloPrincipal {
+    font-size: 4em; }
+  #imgOut,
+  #imgSos,
+  #imgTu {
+    width: 400px; }
+  .section__div--text {
+    width: 400px; } }
+
+.container {
+  display: flex; }
 
 .contacto {
   color: #001149;
