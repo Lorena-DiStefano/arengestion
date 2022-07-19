@@ -1,0 +1,82 @@
+
+.contacto {
+    color:$color2;
+    background: url(../imagenes/bgtres-a.jpg) no-repeat fixed;
+    @include bg; 
+
+.conText {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+.conText-b {
+    text-shadow: 3px 3px 3px white;
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1em;
+    font-weight: 400;
+    margin-top: .5em;
+}
+
+.form__input,
+.form__textarea {
+    background: rgba(243, 240, 233, .1);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border-right: 5px outset #3fe2c4;
+    border-bottom: 5px outset $color2;
+    margin-bottom: 15px;
+    padding: 3px;
+    font-size: 16px;
+    color: black;
+}
+
+.form__textarea {
+    height: 18rem;
+    border-radius: 10px;
+}
+
+.submit {
+    background: rgba(243, 240, 233, .1);
+    font-size: 16px;
+    border-radius: 8px;
+    border-right: 5px outset #3fe2c4;
+    border-bottom: 5px outset $color2;
+    text-shadow: 1px 1px 1px white;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.submit:hover {
+    background-color: rgba(0, 242, 255, .6);
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+.form__label {
+    color: aqua;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000;
+    justify-self: left;
+    margin-left: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form__input,
+.form__textarea,
+.submit {
+    align-self: flex-end;
+}
+
+span {
+    font-style: italic;
+    color: aqua;
+    text-shadow: 1px 1px 1px black;
+}
+}  

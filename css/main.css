@@ -81,38 +81,34 @@ body {
   width: 90%;
   height: auto;
   background: #f3f0e9;
-  /*  display: flex;
-            align-items: center;
-            justify-content: center; */
-  padding: 20px; }
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   @media screen and (min-width: 500px) {
     .nos .section__div--frame {
       width: 80%;
-      /*      justify-content: flex-end; */ } }
+      margin-top: 20%; } }
   @media screen and (min-width: 800px) {
     .nos .section__div--frame {
-      width: 60%;
-      /* align-items: flex-end; */ } }
+      width: 50%;
+      margin-right: 12%; } }
   .nos .section__div--frame .text {
-    padding-top: .5em;
-    padding-left: .5em;
     font-size: 1.4em;
     line-height: 1.2em;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
-    margin-bottom: .5em; }
-    @media screen and (min-width: 500px) {
-      .nos .section__div--frame .text {
-        font-size: 1.6em; } }
+    margin: 0;
+    margin: auto;
+    padding-bottom: 10px; }
     @media screen and (min-width: 800px) {
       .nos .section__div--frame .text {
-        font-size: 1.8em; } }
+        font-size: 1.5em; } }
   .nos .section__div--frame .textDos {
     font-size: 1em;
     font-weight: 600; }
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 800px) {
       .nos .section__div--frame .textDos {
-        font-size: 1.2em; } }
+        font-size: 1.1em; } }
 
 .nos .section__container--dos {
   margin-left: 2em;
@@ -167,7 +163,7 @@ body {
   .accordion-body .galeria {
     width: 100%;
     height: 180px;
-    border: solid 5px  #f5efe9;
+    border: solid 5px #f5efe9;
     border-radius: 10px;
     background-image: url(../imagenes/clientes.jpg);
     background-size: cover;
@@ -193,3 +189,118 @@ body {
 
 .accordion-flush p {
   margin: 0; }
+
+.Servicios {
+  background: url(../imagenes/bgunob.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100vh;
+  color: #001149; }
+
+.tituloPrincipal {
+  color: #f3f0e9;
+  text-shadow: 3px 3px 5px #000;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 400;
+  margin-bottom: .5em; }
+
+.planes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+#imgOut,
+#imgSos,
+#imgTu {
+  width: 400px;
+  height: 250px;
+  border-right: outset 5px aqua;
+  border-bottom: outset 5px aqua;
+  border-radius: 5%; }
+
+.section__div--text {
+  width: 400px;
+  text-align: flex-start;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  align-self: center;
+  background: rgba(243, 240, 233, 0.5);
+  border-radius: 10px; }
+  .section__div--text .tituloSecundario {
+    font-size: 2em;
+    text-shadow: 2px 2px 3px #fff;
+    font-weight: 600;
+    text-align: center; }
+  .section__div--text span {
+    font-style: italic;
+    font-weight: 700; }
+  .section__div--text .text {
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    text-align: left; }
+
+.contacto {
+  color: #001149;
+  background: url(../imagenes/bgtres-a.jpg) no-repeat fixed;
+  background-size: 100% 100%;
+  height: 100vh; }
+  .contacto .conText {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: start; }
+  .contacto .conText-b {
+    text-shadow: 3px 3px 3px white;
+    text-align: center;
+    font-size: 3.5em;
+    line-height: 1em;
+    font-weight: 400;
+    margin-top: .5em; }
+  .contacto .form__input,
+  .contacto .form__textarea {
+    background: rgba(243, 240, 233, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    border-right: 5px outset #3fe2c4;
+    border-bottom: 5px outset #001149;
+    margin-bottom: 15px;
+    padding: 3px;
+    font-size: 16px;
+    color: black; }
+  .contacto .form__textarea {
+    height: 18rem;
+    border-radius: 10px; }
+  .contacto .submit {
+    background: rgba(243, 240, 233, 0.1);
+    font-size: 16px;
+    border-radius: 8px;
+    border-right: 5px outset #3fe2c4;
+    border-bottom: 5px outset #001149;
+    text-shadow: 1px 1px 1px white;
+    font-weight: 600;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all .5s ease; }
+  .contacto .submit:hover {
+    background-color: rgba(0, 242, 255, 0.6);
+    color: black;
+    border-bottom: 3px solid black; }
+  .contacto .form__label {
+    color: aqua;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000;
+    justify-self: left;
+    margin-left: 16px;
+    margin-bottom: 5px;
+    font-weight: 600; }
+  .contacto .form__input,
+  .contacto .form__textarea,
+  .contacto .submit {
+    align-self: flex-end; }
+  .contacto span {
+    font-style: italic;
+    color: aqua;
+    text-shadow: 1px 1px 1px black; }
