@@ -2,13 +2,13 @@
     color: $color2;
     background: url(../imagenes/bgdos-a.jpg) no-repeat fixed;
     @include bg;
+
 }
 
 #accordionFlushExample {
     width: 80%;
-    margin: 0;
-    margin: auto;
-    margin-bottom: 1em;
+    margin: 0 auto;    
+    margin-top: 5%;
 }
 
 .accordion {
